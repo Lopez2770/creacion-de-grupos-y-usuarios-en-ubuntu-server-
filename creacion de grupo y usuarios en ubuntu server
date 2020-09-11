@@ -1,0 +1,22 @@
+#ingresamos a modo root en ubuntu server#
+sudo -i
+
+#CREAMOS EL USUARIO Juan Y Gerson#
+useradd Juan
+Useradd Gerson
+
+#ENLISTAMOAS LOS USUSARIOS#
+cat /etc/passwd
+
+#CREAMOS EL GRUPO "casa"#
+groupadd Casa
+
+#ENLISTAMOS LOS GRUPOS PARA VER SI SE CREO EL GRUPO CASA#
+cat /etc/group/
+
+#AGREGAR USUARIOs "Juan Y Gerson" AL GRUPO ""casa#
+adduser Juan casa
+adduser Gerson casa
+
+#CAMBIAMOS EL NOMBRE DEl GRUPO "casa" A "Familia"#
+groupmod -n Familia casa 
